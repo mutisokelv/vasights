@@ -12,7 +12,7 @@ body {
     /* font-family: montserrat, sans-serif; */
     font-family: graphik;
     line-height: 1.8;
-    font-size: 1em;
+    font-size: 1.1em;
     background: #f2f5f9;
     color: #000000;
     overflow-x: hidden
@@ -191,7 +191,7 @@ h4,
     top: 0;
     z-index: 9;
     width: 100%;
-    background-color: #262262;
+    background-color: #F21B3F;
 }
 
 .site-nav h1 {
@@ -744,7 +744,7 @@ h4,
 }
 
 .hero {
-    background: #262262;
+    background: #F21B3F;
     position: relative
 }
 
@@ -871,7 +871,7 @@ h4,
 }
 
 .features-section .img-wrap {
-    background: #262262;
+    background: #F21B3F;
     border-radius: 30px;
     display: inline-block;
     height: 90px;
@@ -894,7 +894,7 @@ h4,
 }
 
 .features-section .feature {
-    padding: 20px 40px
+    padding: 20px 0px
 }
 
 @media(max-width:991.98px) {
@@ -904,12 +904,12 @@ h4,
 }
 
 .features-section .feature h3 {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 700
 }
 
 .features-section .feature p {
-    font-size: 14px
+    font-size: 1em;
 }
 
 .features-lg .feature {
@@ -1237,7 +1237,7 @@ h4,
 }
 
 .media-entry h3 {
-    font-size: 26px;
+    font-size: 1.5rem;
     font-weight: 700
 }
 
@@ -1250,7 +1250,7 @@ h4,
 }
 
 .media-entry .m-body {
-    padding: 20px 20px 50px
+    padding: 20px 10px 50px
 }
 
 .media-entry .date {
@@ -1273,7 +1273,7 @@ h4,
 }
 
 .media-entry p {
-    font-size: 14px
+    /* font-size: 18px */
 }
 
 .more .label {
@@ -1643,7 +1643,7 @@ h4,
 .site-footer {
     padding-top: 70px;
     padding-bottom: 30px;
-    font-size: 15px;
+    /* font-s   ize: 15px; */
     background-color: #ffffff;
     width: 100%;
 }
@@ -1675,7 +1675,7 @@ h4,
 }
 
 .site-footer .widget h3 {
-    font-size: 23px;
+    /* font-size: 23px; */
     font-weight: 700;
     margin-bottom: 30px
 }
