@@ -9,13 +9,13 @@
 	.st2{fill:#37474F;}
 	.st3{fill:#263238;}
 	.st4{fill:#27DEBF;}
-	.st5{fill:#F21B3F;stroke:#FFFFFF;stroke-width:1.5058;stroke-miterlimit:10;}
+	.st5{fill:#9ADFFF;stroke:#FFFFFF;stroke-width:1.5058;stroke-miterlimit:10;}
 	.st6{fill:#455A64;}
 	.st7{fill:#FFFFFF;}
 	.st8{fill:#FFA8A7;}
 	.st9{fill:#F28F8F;}
 	.st10{fill:#E6E6E6;}
-	.st11{fill:#F21B3F;}
+	.st11{fill:#9ADFFF;}
 	.st12{opacity:0.25;}
 	.st13{opacity:0.2;}
 	.st14{opacity:0.1;}
@@ -27,9 +27,9 @@
 	.st20{opacity:0.7;fill:#FFFFFF;}
 	.st21{opacity:0.5;fill:#FFFFFF;}
 	.st22{fill:none;stroke:#FFFFFF;stroke-width:1.5852;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st23{opacity:0.7;fill:#F21B3F;}
-	.st24{opacity:0.15;fill:#F21B3F;}
-	.st25{opacity:0.5;fill:#F21B3F;}
+	.st23{opacity:0.7;fill:#9ADFFF;}
+	.st24{opacity:0.15;fill:#9ADFFF;}
+	.st25{opacity:0.5;fill:#9ADFFF;}
 	.st26{opacity:0.5;}
 </style>
 <ellipse id="Floor_1_" class="st0" cx="518.7" cy="502.2" rx="361" ry="208.4"/>

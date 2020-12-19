@@ -191,7 +191,7 @@ h4,
     top: 0;
     z-index: 9;
     width: 100%;
-    background-color: #F21B3F;
+    background-color: #9ADFFF;
 }
 
 .site-nav h1 {
@@ -744,7 +744,7 @@ h4,
 }
 
 .hero {
-    background: #F21B3F;
+    background: #9ADFFF;
     position: relative
 }
 
@@ -871,7 +871,7 @@ h4,
 }
 
 .features-section .img-wrap {
-    background: #F21B3F;
+    background: #9ADFFF;
     border-radius: 30px;
     display: inline-block;
     height: 90px;
