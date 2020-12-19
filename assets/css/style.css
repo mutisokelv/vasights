@@ -1,10 +1,25 @@
+@font-face {
+    font-family: "Bower";
+    src: url("../fonts/Bower-Bold.woff2")
+}
+
+@font-face {
+    font-family: "graphik";
+    src: url("../fonts/graphik_regular.woff")
+}
+
 body {
-    font-family: montserrat, sans-serif;
+    /* font-family: montserrat, sans-serif; */
+    font-family: graphik;
     line-height: 1.8;
     font-size: 1em;
     background: #f2f5f9;
-    color: #262262;
+    color: #000000;
     overflow-x: hidden
+}
+
+.title {
+    font-family: Bower;
 }
 
 body:before {
@@ -1056,7 +1071,7 @@ h4,
 }
 
 .section-title .heading {
-    font-size: 30px
+    font-size: 37px
 }
 
 @media(max-width:991.98px) {
@@ -1222,7 +1237,7 @@ h4,
 }
 
 .media-entry h3 {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 700
 }
 
@@ -1660,7 +1675,7 @@ h4,
 }
 
 .site-footer .widget h3 {
-    font-size: 16px;
+    font-size: 23px;
     font-weight: 700;
     margin-bottom: 30px
 }
@@ -1673,10 +1688,10 @@ h4,
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background: #f8f9fa;
+    background: #000000;
     display: inline-block;
     position: relative;
-    color: #000
+    color: rgb(255, 255, 255)
 }
 
 .site-footer .widget .social li a span {
