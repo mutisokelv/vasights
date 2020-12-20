@@ -84,7 +84,7 @@ h4,
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 30px;
-    font-size: 14px
+    font-size: 16px
 }
 
 .btn:active,
@@ -187,7 +187,7 @@ h4,
 }
 
 .site-nav {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 9;
     width: 100%;
@@ -422,13 +422,14 @@ h4,
     z-index: 2000;
     padding-top: 20px;
     background: #fff;
-    height: calc(100vh);
+    height: 35vh;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
     -webkit-transition: .8s all cubic-bezier(.23, 1, .32, 1);
     -o-transition: .8s all cubic-bezier(.23, 1, .32, 1);
-    transition: .8s all cubic-bezier(.23, 1, .32, 1)
+    transition: .8s all cubic-bezier(.23, 1, .32, 1);
+    border-radius: 10px;
 }
 
 .offcanvas-menu .site-mobile-menu {
@@ -447,7 +448,7 @@ h4,
 }
 
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
-    float: right;
+    float: left;
     margin-top: 8px
 }
 
@@ -487,7 +488,7 @@ h4,
     -webkit-overflow-scrolling: touch;
     position: relative;
     padding: 0 20px 20px;
-    height: calc(100vh - 52px);
+    height: max-content;
     padding-bottom: 150px
 }
 
@@ -562,7 +563,7 @@ h4,
 
 .site-mobile-menu .site-nav-wrap>li>a {
     padding-left: 20px;
-    font-size: 14px
+    /* font-size: 14px */
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
@@ -577,7 +578,7 @@ h4,
 
 .site-mobile-menu .site-nav-wrap>li>ul>li>a {
     padding-left: 40px;
-    font-size: 14px
+    /* font-size: 14px */
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul>li>ul {
@@ -787,11 +788,21 @@ h4,
     z-index: 2
 }
 
+.vision {
+    background-color: #262262;
+    color: white;
+}
+
 .hero .hero_img {
     position: absolute;
     right: 0;
     z-index: 2;
-    bottom: 90px
+    bottom: 90px;
+    border-radius: 5%;
+}
+
+.hero .hero_img img {
+    border-radius: 10px;
 }
 
 @media(max-width:991.98px) {
@@ -1212,11 +1223,11 @@ h4,
 
 @media(max-width:991.98px) {
     .post-entries {
-        padding: 30px 0
+        padding: 50px 0
     }
     .sign {
-        float: none!important;
-        text-align: center;
+        float: left!important;
+        text-align: left;
     }
     .copy {
         float: none!important;
@@ -1224,11 +1235,17 @@ h4,
     }
 }
 
+.media-entry {
+    border-radius: 10px;
+}
+
 .media-entry>a {
     display: block;
     background-color: #000;
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
+    max-width: 100%;
     height: 200px;
     background-blend-mode: luminosity;
     -webkit-transition: .3s all ease;
@@ -1242,7 +1259,31 @@ h4,
 }
 
 .media-entry h3 a {
-    color: #000
+    color: #262262!important;
+    text-decoration: underline!important;
+}
+
+.hid:hover {
+    text-decoration: underline!important;
+    /* text-transform: uppercase; */
+    color: #262262!important;
+    font-weight: bold;
+}
+
+.hov {
+    color: rgb(165, 165, 165)!important;
+}
+
+.sign .hid {
+    display: none;
+}
+
+.sign:hover .hov {
+    display: none;
+}
+
+.sign:hover .hid {
+    display: inline;
 }
 
 .media-entry h3 a:hover {
@@ -1250,7 +1291,8 @@ h4,
 }
 
 .media-entry .m-body {
-    padding: 20px 10px 50px
+    padding: 20px 10px 50px;
+    margin-bottom: 15px;
 }
 
 .media-entry .date {
@@ -1642,7 +1684,7 @@ h4,
 
 .site-footer {
     padding-top: 70px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     /* font-s   ize: 15px; */
     background-color: #ffffff;
     width: 100%;
@@ -1658,8 +1700,8 @@ h4,
         text-align: center!important;
     }
     .sign {
-        float: none !important;
-        text-align: center!important;
+        float: left!important;
+        text-align: left!important;
     }
 }
 
@@ -1678,7 +1720,7 @@ h4,
 .site-footer .widget h3 {
     /* font-size: 23px; */
     font-weight: 700;
-    margin-bottom: 30px
+    /* margin-bottom: 30px */
 }
 
 .site-footer .widget .social li {
@@ -1723,8 +1765,8 @@ h4,
 
 .site-footer .copyright {
     position: relative;
-    padding-top: 40px;
-    margin-top: 40px
+    padding-top: 20px;
+    /* margin-top: 40px */
 }
 
 .site-footer .copyright:before {
@@ -1745,4 +1787,5 @@ h4,
 .sign {
     float: right;
     text-align: right;
+    margin-top: 10px;
 }
