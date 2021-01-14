@@ -1,13 +1,20 @@
 <?php 
 $errors = '';
-$myemail = 'djuma@vasights.com';//<-----Put Your email address here.
-
-if(empty($_POST['semail'])){
-    $errors .= "\n Error: email fields are required";
+$myemail = 'info@vasights.com';//<-----Put Your email address here.
+if(empty($_POST['fname'])  || 
+   empty($_POST['lname'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['telephone']) || 
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
 }
 
-
-$email_address = $_POST['semail']; 
+$fname = $_POST['fname']; 
+$lname = $_POST['lname']; 
+$email_address = $_POST['email']; 
+$telephone = $_POST['telephone']; 
+$message = $_POST['message']; 
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
@@ -19,22 +26,22 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Subscribe form submission";
-	$email_body = "You have received a new Subscriber. ".
-	" Email: $email_address"; 
+	$email_subject = "Contact form submission: $fname";
+	$email_body = "You have received a new message. ".
+	" Here are the details:\n Name: $fname $lname \n Email: $email_address \n Telephone: $telephone \n Message \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	//header('Location: contact-form-thank-you.html');
+	header('Location: contact-form-thank-you.html');
 } 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
 <head>
-	<title>Subscriber form handler</title>
+	<title>Contact form handler</title>
 </head>
 
 <body>
