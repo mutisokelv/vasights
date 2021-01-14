@@ -1,7 +1,7 @@
 <?php 
 
 $errors = '';
-$myemail = 'kelvins@vasights.com,djuma@vasights.com,info@vasights.com,';//<-----Put Your email address here.
+$myemail = 'kmutiso@vasights.com,djuma@vasights.com,info@vasights.com';//<-----Put Your email address here.
 if(empty($_POST['fname'])  || 
    empty($_POST['lname'])  || 
    empty($_POST['email']) || 
