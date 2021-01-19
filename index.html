@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2CQ6031E6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H2CQ6031E6');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vasights | Data & Research</title>
@@ -31,9 +44,16 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        .disclaimer {
+            display: none!important;
+        }
+    </style>
+
+
 </head>
 
-<body>
+<body style="background-color: #262262;">
     <div id="overlayer"></div>
     <div class="loader">
         <div class="spinner-border" role="status">
@@ -48,31 +68,27 @@
         </div>
         <div class="site-mobile-menu-body"></div>
     </div>
-    <nav class=" nav-bar site-nav">
+    <nav class=" nav-bar site-nav navbar-default">
         <div class="container">
             <div class="site-navigation">
                 <div class="navbar-brand" style="bottom: -10px;">
-                    <a href="index.html">
+                    <a href="www.vasights.com">
                         <img class=" logo navbar-brand-img" src="assets/logo/logo3.png" alt="" height="70">
                     </a>
                 </div>
-                <!-- <a href="index-2.html" class="logo">VASIGHTS</a> -->
-                <ul class="js-clone-nav d-none d-lg-inline-block site-menu" style="float: right; padding-top: 15px;">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <!-- <li><a href="contact-form-thank-you.html">Thank you</a></li> -->
-
-                    <!-- <li><a href="contact.html">Projects</a></li> -->
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li class="consult cta-button"><a href="consult.html">Consult a Statistician</a></li>
+                <!-- <a href="index-2" class="logo">VASIGHTS</a> -->
+                <ul class="js-clone-nav d-none d-lg-inline-block site-menu" style="float: right; margin-top: 15px;  border-radius: 7px; margin-right: 55px; ">
+                    <li><a href="about">About Us</a></li>
+                    <li class="border-left"><a href="services">Services</a></li>
+                    <li class="border-left"><a href="contact">Contact Us</a></li>
                 </ul>
 
-                <a href="#" class="burger light ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                <a href="#" class="burger dark ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
                     <span></span>
                 </a>
             </div>
         </div>
+
     </nav>
     <div class="hero" id="home">
         <div class="container">
@@ -82,7 +98,7 @@
                     <p class="text-white mb-4" data-aos="fade-up" data-aos-delay="100">We are a research firm based in Nairobi, Kenya, providing technical expertise in data science, research, and GIS.
                     </p>
 
-                    <a href="consult.html"><button class=" btn btn-primary" > Consult a Statistician </button></a>
+                    <button class=" btn btn-primary" data-toggle="modal" data-target="#consultmodal"> Consult a Statistician </button>
                 </div>
             </div>
             <div class="hero_img" data-aos="fade-up" data-aos-delay="100">
@@ -90,176 +106,39 @@
                 <img src="assets/img/hero_img.png" alt="Image" class="img-fluid">
 
             </div>
-        </div>
-        <div class="slant" style="background-image: url('assets/img/slant.svg');"></div>
-    </div>
 
-    <div class="features-lg" id="about">
-        <div class="container">
-            <div class="row feature align-items-center justify-content-between">
-                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-                    <img src="assets/img/a1.svg" alt="Image" class="img-fluid">
-                </div>
-                <div class="col-lg-5 section-title" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="title font-weight-bold mb-4 heading">Our Mission</h2>
-                    <p class="mb-4">Our mission is to provide first-class data science, research, capacity building, and GIS solutions to individuals, organizations, and businesses to convert data into actionable insights.
-                        <hr> We also offer pro bono services to small and medium Non-Governmental Organisations (NGOs) across Sub-Saharan Africa who need support in data science, research, and GIS.</p>
-                    <!-- <p><a href="#" class="btn btn-primary">Get Started</a></p> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="vision features-lg">
-        <div class="container">
-            <div class="row feature align-items-center justify-content-between">
-                <div class="col-lg-4 section-title" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="title font-weight-bold mb-4">Our Vision</h2>
-                    <hr style="background-color: white;">
-                    <p class="mb-4">Our vision is to be the leading data science research and GIS consulting company in Sub Saharan Africa.</p>
-                    <!-- <p><a href="#" class="btn btn-primary">Get Started</a></p> -->
-                </div>
-                <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-                    <img src="assets/img/a2.svg" alt="Image" class="img-fluid">
-                </div>
 
-            </div>
         </div>
-    </div>
-
-    <div class=" features-section post-entries " style="width: 100%; " id="services">
-        <div class="container ">
-            <div class="section-title text-center mb-5 " data-aos="fade-up " data-aos-delay="0 ">
-                <!-- <strong class="subtitle d-block ">and</strong> -->
-                <h2 class="title heading font-weight-bold mb-3 ">Our Services</h2>
-            </div>
-            <div class="row align-items-stretch ">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-up " data-aos-delay="100 " style=" border-radius: 10px!important;">
-                    <div class="media-entry h-100 " style=" border-radius: 10px!important;">
-                        <a href="services.html " style="background-image: url( 'assets/img/gal_1.jpg') "></a>
-                        <div class="bg-white m-body ">
-                            <!-- <span class="date ">May 14, 2020</span> -->
-                            <h3 class="title heading "><a href="services.html ">Data Science</a></h3>
-                            <p>We have more than 5 years of industry experience in automating reports using technologies such as R-markdown and power BI.</p>
-                            <a href="services.html " class="more d-flex align-items-center float-right ">
-                                <span class="label ">Read More</span>
-                                <span class="arrow "><span class="icon-keyboard_arrow_right "></span></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-up " data-aos-delay="200 ">
-                    <div class="media-entry h-100 ">
-                        <a href="services.html" style="background-image: url( 'assets/img/gal_2.jpg') "></a>
-                        <div class="bg-white m-body ">
-                            <!-- <span class="date ">May 14, 2020</span> -->
-                            <h3 class="title heading "><a href="services.html">Research</a></h3>
-                            <p>There is a need to build up collaboration between researchers and statisticians on the African continent. We bridge this...</p>
-                            <a href="services.html" class="more d-flex align-items-center float-right ">
-                                <span class="label ">Read More</span>
-                                <span class="arrow "><span class="icon-keyboard_arrow_right "></span></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-up " data-aos-delay="300 ">
-                    <div class="media-entry h-100 ">
-                        <a href="services.html" style="background-image: url( 'assets/img/gal_3.jpg') "></a>
-                        <div class="bg-white m-body ">
-                            <!-- <span class="date ">May 14, 2020</span> -->
-                            <h3 class="title heading "><a href="services.html">G.I.S</a></h3>
-                            <p>Location intelligence is a key component of decision making in businesses and organizations. Our experts understand the...</p>
-                            <a href="services.html" class="more d-flex align-items-center float-right ">
-                                <span class="label ">Read More</span>
-                                <span class="arrow "><span class="icon-keyboard_arrow_right "></span></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-up " data-aos-delay="400 ">
-                    <div class="media-entry h-100 ">
-                        <a href="services.html" style="background-image: url( 'assets/img/gal_4.jpg') "></a>
-                        <div class="bg-white m-body ">
-                            <!-- <span class="date ">May 14, 2020</span> -->
-                            <h3 class="title heading "><a href="services.html">Capacity Building</a></h3>
-                            <p>We train your analysts on how to use tools like R and Python for data science, creating powerful dashboards using shiny...</p>
-                            <a href="services.html" class="more d-flex align-items-center float-right ">
-                                <span class="label ">Read More</span>
-                                <span class="arrow "><span class="icon-keyboard_arrow_right "></span></span>
-                            </a>
-                        </div>
-                    </div>
+        <!-- Modal -->
+        <div class="modal fade" id="consultmodal" tabindex="-1" role="dialog" aria-labelledby="consultmodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <style>
+                        .forms-studio {
+                            position: relative;
+                            /* padding-bottom: 56.25%; */
+                            overflow: hidden;
+                            width: 100%;
+                            height: 600px;
+                        }
+                        
+                        .forms-studio iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: 0;
+                        }
+                    </style>
+                    <div class='forms-studio'><iframe src='https://script.google.com/macros/s/AKfycbwl9a-_xTBsBPQPijPTJLfRzU7HS9G24jdKcAKxfRqfpxiB2kG9ZjE8JQ/exec'></iframe></div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="py-3">
-        <div class="container">
-            <div class="section-title text-center mb-5 " data-aos="fade-up " data-aos-delay="0 ">
-                <!-- <strong class="subtitle d-block ">and</strong> -->
-                <h2 class="title heading font-weight-bold mb-3 ">Our Partners</h2>
-            </div>
-            <div class="row">
-                <div class="col" data-aos="fade-up" data-aos-delay="0">
-                    <img src="assets/img/logo-puma.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="col" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/img/logo-adobe.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="col" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/logo-google.png" alt="Image" class="img-fluid">
-                </div>
-                <div class="col" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/img/logo-paypal.png" alt="Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="site-footer " id="contact">
-        <div class="container ">
-            <div class="row text-left justify-content-center ">
-                <div class="col-lg-6 ">
-                    <div class="widget hero " style="background-color: white!important; min-height: 1px!important;">
-                        <a href="contact-form-thank-you.html"><img class=" logo navbar-brand-img " src="assets/logo/logo5.png " alt=" " height="120 " style="padding-bottom: 30px; padding-top: 10px;">
-                        </a>
-
-                        <div class=" intro">
-                            <h1 class="title heading" data-aos="fade-up" data-aos-delay="0" style="font-size: 28px; margin-bottom: 10px;">Subscribe</h1>
-                            <p class=" mb-4" data-aos="fade-up" data-aos-delay="100">Sign up for our weekly research newsletters.</p>
-                            <form action="subscribe.php" action="POST" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="200">
-                                <input type="text" class="form-control" placeholder="Enter email address">
-                                <input type="submit" class="btn btn-primary" value="Sign up">
-                            </form>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="sign widget " style="margin-bottom: 0px!important;">
-                        <h3 class="title heading "> Reach out to us</h3>
-                        <ul class="links list-unstyled ">
-                            <li><a href="tel:+254713689444 ">+254 713 689 444</a></li>
-                            <li><a href="tel:+254757615217 "> +254 757 615 217</a></li>
-
-                            <li><a href="mailto:info@vasights.com ">info@vasights.com</a></li>
-                            <li><a href="mailto:joinus@vasights.com ">joinus@vasights.com</a></li>
-
-                            <li><a href="https://goo.gl/maps/Sm1y3RA5n52PD7nJA " target="_blank ">Mbagathi Way, Nairobi, Kenya</a></li>
-
-                        </ul>
-                        <ul class="social list-unstyled ">
-                            <li><a href="https://www.facebook.com/vasightsdata/ " target="_blank "><span class="icon-facebook "></span></a></li>
-                            <li><a href="https://twitter.com/vasights " target="_blank "><span class="icon-twitter "></span></a></li>
-                            <li><a href="https://www.linkedin.com/company/vasights/ " target="_blank "><span class="icon-linkedin "></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row copyright ">
-                <div class="col-md-8 copy ">
-                    <p>
+        <div class="copyright ">
+            <div class="container">
+                <div class="col-md-12 copy text-center " style="color: white; font-size: 14px; bottom: 2px;">
+                    <p style="margin-bottom: 0px;">
 
                         &copy; 2020 -
                         <script>
@@ -267,18 +146,16 @@
                         </script> | Vasights Data & Research
                     </p>
                 </div>
-                <div class="col-md-4 sign " style="margin-top: 0px;">
-                    <p>
 
-                        <a class="hov" href="https://www.iamkelv.co/ " target="_blank " style="font-size: 12px; "> Signed with <i class="icon-heart text-danger " aria-hidden="true "></i></a>
-                        <a class="hid" href="https://www.iamkelv.co/ " target="_blank " style="font-size: 12px; ">www.iamkelv.co</a>
-                    </p>
-                </div>
             </div>
+
         </div>
     </div>
 
-    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- <script src="assets/js/jquery-3.4.1.min.js "></script> -->

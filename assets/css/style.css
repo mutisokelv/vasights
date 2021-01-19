@@ -194,11 +194,10 @@ h4,
 }
 
 .site-nav {
-    position: fixed;
     top: 0;
     z-index: 9;
     width: 100%;
-    background-color: #262262;
+    background-color: transparent;
 }
 
 .site-nav h1 {
@@ -233,7 +232,7 @@ h4,
     border-color: #00aeef;
     -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .2);
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .2);
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 .site-nav .site-navigation .site-menu>li.cta-button a:hover {
@@ -433,7 +432,7 @@ h4,
     z-index: 2000;
     padding-top: 20px;
     background: #fff;
-    height: 35vh;
+    height: max-content;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -495,12 +494,12 @@ h4,
 }
 
 .site-mobile-menu .site-mobile-menu-body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    /* overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; */
     position: relative;
     padding: 0 20px 20px;
-    height: max-content;
-    padding-bottom: 150px
+    /* height: max-content; */
+    /* padding-bottom: 150px */
 }
 
 .site-mobile-menu .site-nav-wrap {
@@ -679,12 +678,19 @@ h4,
     cursor: pointer;
     position: relative;
     top: 20px;
+    margin-right: 10px;
 }
 
 .burger.light:before,
 .burger.light span,
 .burger.light:after {
-    background: #fff
+    background: #262262
+}
+
+.burger.dark:before,
+.burger.dark span,
+.burger.dark:after {
+    background: #ffffff
 }
 
 .burger:before,
@@ -766,7 +772,7 @@ h4,
 
 .hero,
 .hero>.container>.row {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .hero .sign-up-form {
@@ -826,6 +832,19 @@ h4,
     .consult {
         display: none!important;
     }
+    .js-clone-nav {
+        float: right;
+        margin-top: 15px;
+        border: none;
+        background-color: #ffffff;
+    }
+    .border-left {
+        border-left: none!important;
+    }
+}
+
+.border-left {
+    border-left: rgb(184, 184, 184) solid 1px;
 }
 
 .hero .slant {
@@ -1232,7 +1251,7 @@ h4,
 
 .post-entries {
     padding: 70px 0;
-    background-color: #ebf0f6
+    /* background-color: #ebf0f6 */
 }
 
 @media(max-width:991.98px) {
@@ -1240,8 +1259,8 @@ h4,
         padding: 50px 0
     }
     .sign {
-        float: left!important;
-        text-align: left;
+        float: none!important;
+        text-align: center;
     }
     .copy {
         float: none!important;
@@ -1700,11 +1719,12 @@ h4,
     padding-top: 70px;
     /* padding-bottom: 30px; */
     /* font-s   ize: 15px; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     width: 100%;
 }
 
-@media(max-width:991.98px) {
+
+/* @media(max-width:991.98px) {
     .site-footer {
         padding-top: 30px
     }
@@ -1716,7 +1736,7 @@ h4,
         float: left!important;
         text-align: left!important;
     }
-}
+} */
 
 .site-footer a {
     color: #000
@@ -1794,13 +1814,11 @@ h4,
 
 .copy {
     float: left;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .sign {
-    float: right;
-    text-align: right;
-    margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -1822,7 +1840,7 @@ html {
     height: 100%;
     /*Image only BG fallback*/
     /*background = gradient + image pattern combo*/
-    background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+    background: #262262;
 }
 
 body {
@@ -1952,4 +1970,38 @@ select {
 .btn-add {
     background-color: #262262!important;
     border: none!important;
+}
+
+.btn-floating,
+.forms-studio-fileupload,
+.forms-studio-fileupload:focus,
+.forms-studio-fileupload:hover,
+.forms-studio-header,
+.forms-studio-question.header,
+.forms-studio-signature button,
+.forms-studio-submit,
+.forms-studio-submit:focus,
+.forms-studio-submit:hover {
+    background: #262262!important;
+}
+
+.forms-studio-header {
+    display: none!important;
+}
+
+.modal {
+    border-radius: 10px;
+    z-index: 100000;
+}
+
+.modal-dialog-centered {
+    border-radius: 10px;
+}
+
+.js-clone-nav {
+    float: right;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: #262262;
+    border: solid 1px rgb(184, 184, 184);
 }
