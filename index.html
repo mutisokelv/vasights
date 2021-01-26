@@ -17,17 +17,19 @@
 
     <!-- JS for the jotform lightbox -->
 
-    <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script><script type="text/javascript">
+    <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+    <script type="text/javascript">
         var JFL_210251791206548 = new JotformFeedback({
-          formId: '210251791206548',
-          base: 'https://form.jotform.com/',
-          windowTitle: 'Information Request Form',
-          background: '#FFA500',
-          fontColor: '#FFFFFF',
-          type: 'false',
-          height: 500,
-          width: 700,
-          openOnLoad: false
+            formId: '210251791206548',
+            base: 'https://form.jotform.com/',
+            windowTitle: ' ',
+            background: '#ffffff',
+            fontColor: '#FFFFFF',
+            textAlign: 'center!important',
+            type: 'false',
+            height: 500,
+            width: 700,
+            openOnLoad: false
         });
     </script>
 
@@ -64,12 +66,16 @@
         .disclaimer {
             display: none!important;
         }
+        
+        .lightbox-210251791206548 .form-footer {
+            display: none!important;
+        }
     </style>
 
 
 </head>
 
-<body style="background-color: #262262;">
+<body>
     <div id="overlayer"></div>
     <div class="loader">
         <div class="spinner-border" role="status">
@@ -85,20 +91,20 @@
         <div class="site-mobile-menu-body"></div>
     </div>
     <nav class=" nav-bar site-nav navbar-default">
-        <div class="container">
+        <div class="container" style="padding-right: 0!important;">
             <div class="site-navigation">
                 <div class="navbar-brand" style="bottom: -10px;">
                     <a href="index.html">
-                        <img class=" logo navbar-brand-img" src="assets/logo/logo3.png" alt="" height="70">
+                        <img class=" logo navbar-brand-img" src="assets/logo/Vasights-full-UHD copy 2.png" alt="" height="70">
                     </a>
                 </div>
-                <ul class="js-clone-nav d-none d-lg-inline-block site-menu" style="float: right; margin-top: 15px;  border-radius: 7px; margin-right: 55px; ">
+                <ul class="js-clone-nav d-none d-lg-inline-block site-menu" style="float: right; margin-top: 20px;  border-radius: 7px; border: none; ">
                     <li><a href="about.html">About Us</a></li>
                     <li class="border-left"><a href="services.html">Services</a></li>
                     <li class="border-left"><a href="contact.html">Contact Us</a></li>
                 </ul>
 
-                <a href="#" class="burger dark ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                <a href="#" class="burger light ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar" style="margin-top: 15px;">
                     <span></span>
                 </a>
             </div>
@@ -107,58 +113,63 @@
     </nav>
     <div class="hero" id="home">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5 intro">
-                    <h1 class="title text-white font-weight-bold mb-4" data-aos="fade-up" data-aos-delay="0">Build actionable insights from your data.</h1>
-                    <p class="text-white mb-4" data-aos="fade-up" data-aos-delay="100">We are a research firm based in Nairobi, Kenya, providing technical expertise in data science, research, and GIS.
-                    </p>
-                    <button class="btn btn-primary lightbox-210251791206548" style="margin-top: 16px">
+            <div class="row align-items-center justify-content-between" style="width: 100%; padding-left: -15!important;">
+                <div class="col-md-6 ">
+                    <div class=" intro">
+                        <h1 class="title  font-weight-bold mb-4" data-aos="fade-up" data-aos-delay="0">Build actionable insights from your data.</h1>
+                        <p class=" mb-4" data-aos="fade-up" data-aos-delay="100" style="color: rgb(102, 102, 102);">We are a research firm based in Nairobi, Kenya, providing technical expertise in data science, research, and GIS.
+                        </p>
+                        <button class="btn btn-primary lightbox-210251791206548" style="margin-top: 16px">
                         Consult a Statistician
-                    </button>                    
+                    </button>
+                    </div>
                 </div>
-            </div>
-            <div class="hero_img" data-aos="fade-up" data-aos-delay="100">
-                <!-- <img src="assets/img/va.png" alt="Image" class="img-fluid"> -->
-                <img src="assets/img/hero_img.png" alt="Image" class="img-fluid">
+                <div class="img col-md-6">
+                    <!-- <div class="" style="position:absolute; "> -->
+                    <!-- <img src="assets/img/va.png" alt="Image" class="img-fluid"> -->
+                    <img src="assets/img/hero_img.png" alt="Image" class="mobile img-fluid">
+                    <img src="assets/img/hero_img.png" alt="Image" class="web img-fluid">
 
-            </div>
+                    <!-- </div> -->
 
-
-        </div>
-               
-        <div class="copyright ">
-            <div class="container">
-                <div class="col-md-12 copy text-center " style="color: white; font-size: 14px; bottom: 2px;">
-                    <p style="margin-bottom: 0px;">
-
-                        &copy; 2020 -
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> | Vasights Data & Research
-                    </p>
                 </div>
 
             </div>
+
 
         </div>
     </div>
 
+    <div class="copyright ">
+        <div class="container">
+            <div class="col-md-12 copy text-center " style="color:#262262; font-size: 14px; bottom: 2px;">
+                <p style="margin-bottom: 0px;">
+
+                    &copy; 2020 -
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> | Vasights Data & Research
+                </p>
+            </div>
+
+        </div>
 
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- <script src="assets/js/jquery-3.4.1.min.js "></script> -->
-    <script src="assets/js/popper.min.js "></script>
-    <script src="assets/js/bootstrap.min.js "></script>
-    <script src="assets/js/owl.carousel.min.js "></script>
-    <script src="assets/js/aos.js "></script>
-    <script src="assets/js/jquery.animateNumber.min.js "></script>
-    <script src="assets/js/jquery.waypoints.min.js "></script>
-    <script src="assets/js/jquery.fancybox.min.js "></script>
-    <script src="assets/js/aos.js "></script>
-    <script src="assets/js/custom.js "></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- <script src="assets/js/jquery-3.4.1.min.js "></script> -->
+        <script src="assets/js/popper.min.js "></script>
+        <script src="assets/js/bootstrap.min.js "></script>
+        <script src="assets/js/owl.carousel.min.js "></script>
+        <script src="assets/js/aos.js "></script>
+        <script src="assets/js/jquery.animateNumber.min.js "></script>
+        <script src="assets/js/jquery.waypoints.min.js "></script>
+        <script src="assets/js/jquery.fancybox.min.js "></script>
+        <script src="assets/js/aos.js "></script>
+        <script src="assets/js/custom.js "></script>
 
 </body>
 
