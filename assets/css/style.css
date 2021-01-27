@@ -2010,6 +2010,9 @@ select {
     .hero .container .row {
         /* min-height: 80vh; */
     }
+    .cta-button {
+        display: none!important;
+    }
 }
 
 .form-footer {
