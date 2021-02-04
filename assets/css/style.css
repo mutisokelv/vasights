@@ -804,6 +804,12 @@ h4,
     z-index: 2
 }
 
+@media(max-width:425px){
+    .intro{
+        text-align: center;
+    }
+}
+
 .vision {
     background-color: #262262;
     color: white;
