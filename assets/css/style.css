@@ -19,6 +19,9 @@ body {
 
 .title {
     font-family: Bower;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #262262!important;
 }
 
 body:before {
@@ -1273,7 +1276,8 @@ h4,
 
 .media-entry h3 {
     font-size: 1.5rem;
-    font-weight: 700
+    font-weight: 700;
+    color: #262262!important;
 }
 
 .media-entry h3 a {
@@ -2030,3 +2034,35 @@ select {
 p {
     color: rgb(102, 102, 102)!important;
 }
+
+@media (min-width: 1024px) {
+
+    .bgimg1 {
+        background-image: url('../img/vasights_numbers-01.png');
+        background-position: top left; 
+        background-repeat: no-repeat; 
+        background-size: 75% 75%;
+        }
+
+    .bgimg2 {
+        background-image: url('../img/vasights_numbers-02.png');
+        background-position: top left; 
+        background-repeat: no-repeat; 
+        background-size: 75% 75%;
+        }
+
+    .bgimg3 {
+        background-image: url('../img/vasights_numbers-03.png');
+        background-position: top left; 
+        background-repeat: no-repeat; 
+        background-size: 75% 62%;
+        }
+    
+    .bgimg4 {
+        background-image: url('../img/vasights_numbers-04.png');
+        background-position: top left; 
+        background-repeat: no-repeat; 
+        background-size: 75% 75%;
+        }
+        
+    }
