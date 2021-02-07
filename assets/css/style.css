@@ -11,17 +11,18 @@
 body {
     /* font-family: montserrat, sans-serif; */
     font-family: graphik;
-    line-height: 1.4;
-    font-size: 1.1em;
+    /* line-height: 1.4; */
+    font-size: 18px;
     color: #000000;
     overflow-x: hidden
 }
 
 .title {
     font-family: Bower;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: 700;
     color: #262262!important;
+    text-align: left;
 }
 
 body:before {
@@ -213,20 +214,21 @@ h4,
 }
 
 .site-nav .site-navigation .site-menu>li {
-    display: inline-block
+    display: inline-block;
+    padding: 10px 5px;
 }
 
 .site-nav .site-navigation .site-menu>li>a {
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     color: #000;
     display: inline-block;
     text-decoration: none!important;
-    color: #fff
+    /* color: #fff */
 }
 
 .site-nav .site-navigation .site-menu>li>a:hover {
-    color: #000000
+    color: #ffffff
 }
 
 .site-nav .site-navigation .site-menu>li.cta-button a {
@@ -427,7 +429,7 @@ h4,
 }
 
 .site-mobile-menu {
-    width: 300px;
+    width: 100%;
     position: fixed;
     right: 0;
     z-index: 2000;
@@ -441,7 +443,7 @@ h4,
     -webkit-transition: .8s all cubic-bezier(.23, 1, .32, 1);
     -o-transition: .8s all cubic-bezier(.23, 1, .32, 1);
     transition: .8s all cubic-bezier(.23, 1, .32, 1);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .offcanvas-menu .site-mobile-menu {
@@ -460,7 +462,7 @@ h4,
 }
 
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
-    float: left;
+    float: right;
     margin-top: 8px
 }
 
@@ -468,7 +470,7 @@ h4,
     font-size: 30px;
     display: inline-block;
     padding-left: 10px;
-    padding-right: 0;
+    padding-right: 10px;
     line-height: 1;
     cursor: pointer;
     -webkit-transition: .3s all ease;
@@ -576,6 +578,7 @@ h4,
 .site-mobile-menu .site-nav-wrap>li>a {
     padding-left: 20px;
     /* font-size: 14px */
+  
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
@@ -602,9 +605,11 @@ h4,
     display: block
 }
 
-.site-mobile-menu .site-nav-wrap>li>ul>li>ul>li>a {
+.site-mobile-menu ul>li>a {
     font-size: 14px;
-    padding-left: 60px
+    /* padding-left: 60px */
+    /* border-bottom: none!important; */
+    /* color: #262262; */
 }
 
 .sticky-wrapper {
@@ -840,13 +845,20 @@ h4,
         border: none;
         background-color: #ffffff;
     }
-    .border-left {
+    .boder-left {
         border-left: none!important;
+    }
+    .site-mobile-menu .site-nav-wrap>li>a{
+        border-bottom: #26226280 1px solid;
+        color: #262262;
+        padding: 20px;
+        font-size: 17px;
+    
     }
 }
 
-.border-left {
-    border-left: rgb(184, 184, 184) solid 1px;
+ .boder-left {
+    border-left: rgb(255, 255, 255) solid 2px;
 }
 
 .hero .slant {
@@ -1134,8 +1146,24 @@ h4,
     .team-section {
         padding: 30px 0
     }
+    .title {
+    text-align: center;
+    padding-top: 5px;
+    }
+    .intro p{
+        text-align: center;
+    }
+    .intro {
+        text-align: center!important;
+    }
+    .features-section p{
+        padding-top: 15px;
+    }
 }
 
+p .we{
+    text-align: left;
+}
 .team-section .team {
     padding-left: 20px;
     padding-right: 20px
@@ -1978,10 +2006,38 @@ select {
 
 .js-clone-nav {
     float: right;
-    margin-top: 15px;
+    margin-top: 26px;
     border-radius: 7px;
-    background-color: rgb(184, 184, 184);
+    background-color: #969595;
+    /* color: #262262; */
+    line-height: 0px!important;
 }
+
+.js-clone-nav li{
+    border-bottom: none;
+}
+.js-clone-nav li:hover{
+background-color: #262262;
+color: white!important;
+}
+.js-clone-nav li a{
+    color: white!important;
+    }
+
+.js-clone-nav .left:hover{
+    border-radius: 7px 0px 0px 7px;
+    }
+
+
+    .js-clone-nav .right:hover{
+        border-radius: 0px 7px 7px 0px;
+        }
+
+        .js-clone-nav .cas{
+            background-color: #26adee;
+            border-radius: 0px 7px 7px 0px;
+
+        }
 
 .img .mobile {
     display: none;
@@ -2017,6 +2073,11 @@ select {
     .cta-button {
         display: none!important;
     }
+
+.js-clone-nav li{
+    border-bottom: #262262 solid 1px
+}
+
 }
 
 .form-footer {
