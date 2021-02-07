@@ -1148,8 +1148,10 @@ h4,
     }
     .title {
     text-align: center;
-    padding-top: 5px;
     }
+    .intro .title {
+        padding-top: 15px!important;
+        }
     .intro p{
         text-align: center;
     }
@@ -2049,6 +2051,9 @@ color: white!important;
 }
 
 @media(max-width:991.98px) {
+    .img .web {
+        top: 0px!important;
+    }
     .post-entries {
         padding: 50px 0
     }
@@ -2062,7 +2067,7 @@ color: white!important;
     }
     .img .mobile {
         display: inline;
-        top: 100;
+        top: 100px;
     }
     .img .web {
         display: none;
